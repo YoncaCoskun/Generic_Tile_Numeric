@@ -1,0 +1,70 @@
+.tileLayout {
+    float: left !important;
+    width: 350px !important;
+    height: 176px !important;
+}
+
+.numericTile {
+    float: left !important;
+}
+
+.sapMNCInner {
+    right: initial !important;
+}
+
+.sapMNCValueScr {
+    font-size: 25px !important;
+    width: 50px !important;
+
+}
+.sapMNCInner {
+    padding: 0px 0px 0px 5px !important;
+}
+
+.sapMNC {
+    height: 3rem !important;
+}
+
+.sapMTileCntContent {
+    margin-bottom: 0rem !important;
+}
+
+.sapMFlexItemAlignAuto {
+    margin: auto !important;
+    margin-right: 10px !important;
+}
+
+.sapMLabel {
+    display: initial !important;
+}
+
+.sapMNCIndScale {
+    padding-top: 0rem !important;
+    padding-left: 0px !important;
+}
+
+.sapMNCIndicator {
+    margin-top: 10px !important;
+}
+
+.sapMNCScale {
+    margin-top: 1.4rem !important;
+    font-size: x-small !important;
+}
+
+.sapMNCIndicator {
+    padding-top: 3px !important;
+    border-bottom: 0.5rem solid !important;
+}
+.sapMGT {
+    position: absolute !important;
+}
+
+.sapMCustomTileContent {
+    width: 350px !important;
+    height: 176px !important;
+
+}
+.sapMFlexBox {
+    margin-right: -10px !important;
+}

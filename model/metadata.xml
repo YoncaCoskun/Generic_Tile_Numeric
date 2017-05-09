@@ -1,0 +1,44 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+    <edmx:DataServices
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="com.ittr.rim">
+            <EntityType Name="Sensor">
+                <Key>
+                    <PropertyRef Name="SensorId"/>
+                </Key>
+                <Property Name="SensorId" Type="Edm.String" Nullable="false"/>
+                <Property Name="Distance" Type="Edm.Double"/>
+                <Property Name="Temperature" Type="Edm.Double"/>
+                <Property Name="WarehouseNo" Type="Edm.String"/>
+                <Property Name="StorageArea" Type="Edm.String"/>
+                <Property Name="StorageType" Type="Edm.String"/>
+                <Property Name="StorageBin" Type="Edm.String"/>
+                <Property Name="BinWidth" Type="Edm.Double"/>
+                <Property Name="BinHeight" Type="Edm.Double"/>
+                <Property Name="BinLength" Type="Edm.Double"/>
+                <Property Name="BinUod" Type="Edm.String"/>
+                <Property Name="PercentageOfFullness" Type="Edm.Double"/>
+                <Property Name="PercentageOfAvailability" Type="Edm.Double"/>
+                <Property Name="AvailableQuantity" Type="Edm.Int16"/>
+                <Property Name="Material" Type="Edm.String"/>
+                <Property Name="MaterialGrossWeight" Type="Edm.Double"/>
+                <Property Name="MaterialNetWeight" Type="Edm.Double"/>
+                <Property Name="MaterialWeightUnit" Type="Edm.String"/>
+                <Property Name="MaterialVolume" Type="Edm.Double"/>
+                <Property Name="MaterialVolumeUnit" Type="Edm.String"/>
+                <Property Name="MaterialLanguage" Type="Edm.String"/>
+                <Property Name="MaterialText" Type="Edm.String"/>
+                <Property Name="MaterialWidth" Type="Edm.Double"/>
+                <Property Name="MaterialHeight" Type="Edm.Double"/>
+                <Property Name="MaterialLength" Type="Edm.Double"/>
+                <Property Name="MaterialUod" Type="Edm.String"/>
+                <Property Name="MaterialQuantity" Type="Edm.Double"/>
+            </EntityType>
+            <EntityContainer Name="ODataRimEntityContainer" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Sensors" EntityType="com.ittr.rim.Sensor"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

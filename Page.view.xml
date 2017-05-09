@@ -1,0 +1,43 @@
+<mvc:View height="100%" controllerName="sap.m.sample.TileContainer.Page" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page showHeader="false" enableScrolling="false">
+		<TileContainer id="container" tileDelete="handleTileDelete" tiles="{ path: '/results'}">
+			<CustomTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+				<content>
+					<GenericTile header="{StorageBin}" press="press" subheader="{MaterialText}" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+						headerImage="sap-icon://product">
+						<tileContent>
+							<TileContent>
+								<content>
+									<VBox>
+										<HBox>
+											<Label text="POF"></Label>
+											<NumericContent class="numericTile" indicator="Up" scale="%" value="{PercentageOfFullness}" valueColor="Critical"/>
+										</HBox>
+										<HBox>
+											<Label text="POA"></Label>
+											<NumericContent class="numericTile" indicator="Up" scale="%" value="{PercentageOfAvailability}" valueColor="Good"/>
+										</HBox>
+									</VBox>
+								</content>
+							</TileContent>
+							<TileContent>
+								<content>
+									<VBox>
+										<HBox>
+											<Label text="MQ"></Label>
+											<NumericContent class="numericTile" indicator="None" scale="ADT" value="{MaterialQuantity}" valueColor="Critical"/>
+										</HBox>
+										<HBox>
+											<Label text="AQ"></Label>
+											<NumericContent class="numericTile" indicator="None" scale="ADT" value="{AvailableQuantity}" valueColor="Good"/>
+										</HBox>
+									</VBox>
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+				</content>
+			</CustomTile>
+		</TileContainer>
+	</Page>
+</mvc:View>
